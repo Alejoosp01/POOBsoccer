@@ -19,10 +19,16 @@ public class Country {
         this.power = power;
     }
 
+    /**
+     * Devuelve el nombre del pais.
+     */
     public String getName() {
         return name;
     }
 
+    /**
+     * Devuelve el poder del pais.
+     */
     public Power getPower() {
         return power;
     }

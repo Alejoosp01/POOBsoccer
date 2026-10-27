@@ -8,6 +8,9 @@ import java.util.ArrayList;
  */
 public class CharacterCatalog {
 
+    /**
+     * Crea y devuelve los 5 personajes disponibles.
+     */
     public static ArrayList<GameCharacter> createCharacters() throws POOBSoccerException {
         ArrayList<GameCharacter> characters = new ArrayList<GameCharacter>();
         characters.add(new GameCharacter("Corea del Sur", new Country("Corea del Sur", new PushPower()), 1, 2, 5));

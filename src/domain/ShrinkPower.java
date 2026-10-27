@@ -9,6 +9,9 @@ public class ShrinkPower extends Power {
         super("Reduccion", 5);
     }
 
+    /**
+     * Encoge al oponente durante la duracion del poder.
+     */
     @Override
     public void activate(Ball ball, Player owner, Player opponent) {
         opponent.shrink(getDuration());

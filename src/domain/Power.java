@@ -19,10 +19,16 @@ public abstract class Power {
      */
     public abstract void activate(Ball ball, Player owner, Player opponent);
 
+    /**
+     * Devuelve el nombre del poder.
+     */
     public String getName() {
         return name;
     }
 
+    /**
+     * Devuelve los segundos que dura el efecto del poder.
+     */
     public double getDuration() {
         return duration;
     }

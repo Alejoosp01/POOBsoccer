@@ -40,18 +40,30 @@ public class Player {
         return -1;
     }
 
+    /**
+     * Aturde al jugador durante 3 segundos.
+     */
     public void stun() {
         stunTime = STUN_SECONDS;
     }
 
+    /**
+     * Congela al jugador durante los segundos indicados.
+     */
     public void freeze(double seconds) {
         frozenTime = seconds;
     }
 
+    /**
+     * Encoge al jugador durante los segundos indicados.
+     */
     public void shrink(double seconds) {
         shrinkTime = seconds;
     }
 
+    /**
+     * Invierte los controles del jugador durante los segundos indicados.
+     */
     public void confuse(double seconds) {
         confusedTime = seconds;
     }
@@ -73,6 +85,9 @@ public class Player {
         confusedTime = reduce(confusedTime, dt);
     }
 
+    /**
+     * Resta dt al tiempo de un efecto sin bajar de 0.
+     */
     private double reduce(double time, double dt) {
         if (time - dt < 0) {
             return 0;
@@ -87,34 +102,58 @@ public class Player {
         return !isStunned() && !isFrozen();
     }
 
+    /**
+     * Devuelve si el jugador esta aturdido.
+     */
     public boolean isStunned() {
         return stunTime > 0;
     }
 
+    /**
+     * Devuelve si el jugador esta congelado.
+     */
     public boolean isFrozen() {
         return frozenTime > 0;
     }
 
+    /**
+     * Devuelve si el jugador esta encogido.
+     */
     public boolean isShrunk() {
         return shrinkTime > 0;
     }
 
+    /**
+     * Devuelve si el jugador tiene los controles invertidos.
+     */
     public boolean isConfused() {
         return confusedTime > 0;
     }
 
+    /**
+     * Devuelve el personaje que controla este jugador.
+     */
     public GameCharacter getCharacter() {
         return character;
     }
 
+    /**
+     * Devuelve si el jugador defiende el arco izquierdo.
+     */
     public boolean isLeftSide() {
         return leftSide;
     }
 
+    /**
+     * Devuelve la posicion en el eje x.
+     */
     public double getX() {
         return x;
     }
 
+    /**
+     * Devuelve la posicion en el eje y.
+     */
     public double getY() {
         return y;
     }

@@ -9,6 +9,9 @@ public class ConfusionPower extends Power {
         super("Confusion", 5);
     }
 
+    /**
+     * Invierte los controles del oponente durante la duracion del poder.
+     */
     @Override
     public void activate(Ball ball, Player owner, Player opponent) {
         opponent.confuse(getDuration());

@@ -13,6 +13,9 @@ public class PushPower extends Power {
         super("Empuje", Player.STUN_SECONDS);
     }
 
+    /**
+     * Dispara el balon en linea recta hacia el arco rival y lo deja cargado con el Empuje.
+     */
     @Override
     public void activate(Ball ball, Player owner, Player opponent) {
         ball.setVelocity(owner.getAttackDirection() * SHOT_SPEED, 0);

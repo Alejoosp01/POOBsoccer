@@ -13,6 +13,9 @@ public class IllusionPower extends Power {
         super("Ilusion", 1.5);
     }
 
+    /**
+     * Dispara el balon en linea recta hacia el arco rival y crea las copias falsas.
+     */
     @Override
     public void activate(Ball ball, Player owner, Player opponent) {
         ball.setVelocity(owner.getAttackDirection() * SHOT_SPEED, 0);

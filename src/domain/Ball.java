@@ -85,10 +85,16 @@ public class Ball {
         return illusionTime > 0;
     }
 
+    /**
+     * Devuelve la cantidad de copias falsas de la Ilusion.
+     */
     public int getDecoyCount() {
         return decoyCount;
     }
 
+    /**
+     * Devuelve la posicion en el eje x.
+     */
     public double getX() {
         return x;
     }
