@@ -28,6 +28,9 @@ public class Ball {
         this.illusionTime = 0;
     }
 
+    /**
+     * Pone la velocidad del balon en los ejes x y y
+     */
     public void setVelocity(double velocityX, double velocityY) {
         this.velocityX = velocityX;
         this.velocityY = velocityY;
@@ -40,6 +43,9 @@ public class Ball {
         pushCharged = true;
     }
 
+    /**
+     * Descarga el balon del Empuje.
+     */
     public void releasePush() {
         pushCharged = false;
     }
@@ -65,10 +71,16 @@ public class Ball {
         }
     }
 
+    /**
+     * Devuelve si el balon tiene cargado el Empuje.
+     */
     public boolean isPushCharged() {
         return pushCharged;
     }
 
+    /**
+     * Devuelve si la Ilusion esta activa.
+     */
     public boolean isIllusionActive() {
         return illusionTime > 0;
     }
@@ -81,18 +93,30 @@ public class Ball {
         return x;
     }
 
+    /**
+     * Devuelve la posicion en el eje y.
+     */
     public double getY() {
         return y;
     }
 
+    /**
+     * Devuelve la velocidad en el eje x.
+     */
     public double getVelocityX() {
         return velocityX;
     }
 
+    /**
+     * Devuelve la velocidad en el eje y.
+     */
     public double getVelocityY() {
         return velocityY;
     }
 
+    /**
+     * Devuelve el radio del balon.
+     */
     public double getRadius() {
         return radius;
     }
