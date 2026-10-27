@@ -1,0 +1,57 @@
+# =========================================================
+# POOBSoccer 2026-2 - .gitignore
+# =========================================================
+
+# ---------- Archivo de estudio personal (NUNCA se sube) ----------
+EXPLICACION_CODIGO.txt
+
+# ---------- Compilados de Java ----------
+*.class
+bin/
+out/
+target/
+build/
+*.jar
+*.war
+*.ear
+# Si mas adelante necesitamos versionar librerias (ej. JUnit en lib/),
+# descomentar la siguiente linea:
+# !lib/*.jar
+
+# Logs de errores de la JVM
+hs_err_pid*
+replay_pid*
+*.log
+
+# ---------- Eclipse ----------
+.metadata/
+.settings/
+.recommenders/
+.loadpath
+.factorypath
+*.launch
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+# .project y .classpath SI se versionan (limpios, con rutas relativas)
+# para que ambos IDEs abran el proyecto igual. Ver EXPLICACION_CODIGO.txt.
+
+# ---------- VS Code ----------
+.vscode/
+*.code-workspace
+.history/
+
+# ---------- IntelliJ (por si algun companero lo abre) ----------
+.idea/
+*.iml
+
+# ---------- Sistema operativo ----------
+.DS_Store
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
