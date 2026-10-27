@@ -14,9 +14,8 @@ build/
 *.jar
 *.war
 *.ear
-# Si mas adelante necesitamos versionar librerias (ej. JUnit en lib/),
-# descomentar la siguiente linea:
-# !lib/*.jar
+# Excepcion: las librerias del proyecto (JUnit) SI se versionan
+!lib/*.jar
 
 # Logs de errores de la JVM
 hs_err_pid*
